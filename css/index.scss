@@ -1,0 +1,287 @@
+@import "common";
+@import "common/mixins";
+.swiper-container-banner .swiper-container-horizontal > .swiper-pagination-bullets{
+  bottom:40px;
+}
+
+
+
+.banner{
+  position:relative;
+  .swiper-container {
+    width: 100%;
+    height: 450px;
+    .swiper-slide{
+      @include bg-size(cover);
+    }
+    @for $i from 1 through 3 {
+      .slide#{$i}{
+        background-image:url('../images/indexbanner#{$i}.jpg');
+      }
+    }
+  }
+
+  .bannerpos{
+    width:1200px;
+    border-radius: 10px;
+    background: #fff;
+    line-height: 80px;
+    position:absolute;
+    left:50%;
+    bottom:-60px;
+    z-index:20;
+    margin-left:-600px;
+    box-shadow: -2px -2px 3px #cccccc;
+    border-bottom:1px solid #ddd;
+  }
+}
+
+.content{
+  margin-top:70px;
+  h2{
+    line-height: 80px;
+  }
+  .siteNav{
+    ul{
+      display: inline-block;
+      li{
+        line-height: 60px;
+        float:left;
+        margin-right:70px;
+        font-size: 20px;
+        cursor: pointer;
+        &:last-child{
+          margin-right:0;
+        }
+      }
+    }
+  }
+
+ .bigTab{
+   background-color: #f2f2f2;
+   padding:40px 0;
+   .box{
+     width:1200px;
+     margin:0 auto;
+     overflow: hidden;
+
+     position:relative;
+     .tablist{
+       width:7200px;
+
+       position:relative;
+       left:0;
+       .tab{
+         width:1200px;
+
+         float:left;
+         .tab-item{
+           width:230px;
+           height:190px;
+           float:left;
+           margin-right:93px;
+           &:nth-child(4n){
+             margin-right:0;
+           }
+           .img{
+             height:130px;
+             overflow: hidden;
+             img{
+               width:230px;
+               height:130px;
+             }
+           }
+           p{
+             line-height:60px;
+             text-align: center;
+           }
+         }
+       }
+     }
+   }
+
+   .use{
+     width:180px;
+     line-height:50px;
+     border-radius: 20px;
+     margin:50px auto 0;
+     background-color: #27c7d1;
+     color:#fff;
+   }
+ }
+
+  .advantage{
+    padding:20px 0;
+    .advantage-item{
+      float:left;
+      width:399px;
+      height:160px;
+      border-right:1px dotted #fff;
+      &:last-child{
+        border-right:0;
+      }
+      .advantage-item-left{
+          margin-left:45px;
+      }
+      .advantage-item-right{
+        width:220px;
+        margin-left:18px;
+        margin-right:40px;
+        color:#fff;
+        h3{
+          line-height: 54px;
+        }
+      }
+    }
+  }
+
+  .screenDetail{
+    h3{
+      line-height:154px;
+    }
+    .swiper-container-screen{
+      width:1200px;
+      margin:0 auto;
+      .screenlist{
+        .screen-item{
+          width:310px;
+          margin-bottom:50px;
+          .imgMax{
+            height:180px;
+            overflow: hidden;
+            img{
+              width:100%;
+              height:100%;
+              transition: all 1s ease
+            }
+          }
+          p{
+            line-height: 54px;
+          }
+          &:hover{
+            img{
+              transform: scale(1.2);
+            }
+            p{
+              background-color: #27c7d1;
+              color:#fff;
+            }
+          }
+        }
+      }
+    }
+    .dingzuo{
+      width:220px;
+      line-height: 44px;
+      margin:0 auto 20px;
+      border-radius: 20px;
+    }
+  }
+
+  .companyChange{
+    height:320px;
+    background-color: #f2f2f2;
+    .container{
+      position:relative;
+      .button{
+        position:absolute;
+        top:126px;
+        cursor: pointer;
+        &.button-left{
+          left:0
+        }
+        &.button-right{
+          right:0;
+          transform: rotate(180deg);
+        }
+      }
+      .logolist{
+        display: inline-block;
+        margin: 30px auto;
+        img{
+          float:left;
+          border-radius: 50%;
+          margin-right:30px;
+          border:5px solid transparent;
+          transition: border .5s ease;
+          &:last-child{
+            margin-right:0;
+          }
+          &.on{
+            border:5px solid #27c7d1;
+          }
+        }
+      }
+      .desclist{
+        p{
+          display: inline-block;
+          width:800px;
+          height:auto;
+          line-height:30px;
+          font-size: 18px;
+          text-align: left;
+          position: relative;
+          &:before{
+            display: block;
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: -20px;
+            width: 25px;
+            height: 20px;
+            background: url("../images/ying.png") center no-repeat
+          }
+          &:after{
+            display: block;
+            content: '';
+            position: absolute;
+            right: -25px;
+            bottom: -20px;
+            width: 25px;
+            height: 20px;
+            background: url("../images/ying.png") center no-repeat;
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+
+  }
+
+  .companylunbo{
+   padding:20px 0 10px
+  }
+
+  .news{
+    margin:20px 0;
+    .imgdesc{
+      img{
+        width:800px;
+        height:250px;
+      }
+      p{
+        padding:0 30px;
+        line-height: 34px;
+        font-size: 18px;
+      }
+    }
+    .news-list{
+      margin-top:10px;
+      li{
+        line-height: 36px;
+
+        width:360px;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+
+}
+
+
+
+
+
+

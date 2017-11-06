@@ -1,0 +1,39 @@
+{
+   "data":{
+      "page": 1,
+      "pagecut": 4,
+      "total": 18,
+      "data":
+      [
+        {
+          "article_id": 10,
+          "title": "顾客要的不一定是便宜10",
+          "show_date": "2016-12-26",
+          "covers": ""
+        }, {
+        "article_id": 11,
+        "title": "顾客要的不一定是便宜11",
+        "show_date": "2016-12-26",
+        "covers": ""
+      }, {
+        "article_id": 12,
+        "title": "顾客要的不一定是便宜12",
+        "show_date": "2016-12-26",
+        "covers": ""
+      }, {
+        "article_id": 13,
+        "title": "顾客要的不一定是便宜13",
+        "show_date": "2016-12-26",
+        "covers": "111"
+      }, {
+        "article_id": 14,
+        "title": "顾客要的不一定是便宜14",
+        "show_date": "2016-12-26",
+        "covers": ""
+      }
+      ]
+   },
+  "message": "处理成功！",
+  "status": 1,
+  "code": 0
+}

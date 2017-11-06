@@ -1,0 +1,76 @@
+{
+  "data":
+  [
+    {
+      "recruit_id": "10",
+      "nums": "5" ,
+      "recruit_name": "软件工程师" ,
+      "addresss": "江苏"  ,
+      "salary": "6W" ,
+      "contents": "12313"  ,
+
+      "sorts": 55,
+      "statuss": 1,
+      "addtime": 1497022010
+    },
+    {
+      "recruit_id": "12",
+    "nums": "10名" ,
+    "recruit_name": "前端" ,
+    "addresss": "武汉"  ,
+    "salary": "6W" ,
+    "contents": "111111"  ,
+
+    "sorts": 55,
+    "statuss": 1,
+    "addtime": 1497022010
+  }, {
+    "recruit_id": "31",
+    "nums": "15" ,
+    "recruit_name": "后台" ,
+    "addresss": "长沙"  ,
+    "salary": "6W" ,
+    "contents": "222222"  ,
+
+    "sorts": 55,
+    "statuss": 1,
+    "addtime": 1497022010
+  }, {
+    "recruit_id": "3",
+    "nums": "20" ,
+    "recruit_name": "设计" ,
+    "addresss": "背景"  ,
+    "salary": "6W" ,
+    "contents": "333333"  ,
+
+    "sorts": 55,
+    "statuss": 1,
+    "addtime": 1497022010
+  }, {
+    "recruit_id": "4",
+    "nums": "25" ,
+    "recruit_name": "硬件工程师" ,
+    "addresss": "上海"  ,
+    "salary": "6W" ,
+    "contents": "444444"  ,
+
+    "sorts": 55,
+    "statuss": 1,
+    "addtime": 1497022010
+  }, {
+    "recruit_id": "5",
+    "nums": "30" ,
+    "recruit_name": "嵌入式工程师" ,
+    "addresss": "深圳"  ,
+    "salary": "6W" ,
+    "contents": "555555"  ,
+
+    "sorts": 55,
+    "statuss": 1,
+    "addtime": 1497022010
+  }
+  ],
+  "message": "处理成功！",
+  "status": 1,
+  "code": 0
+}

@@ -1,0 +1,210 @@
+@import "common/reset";
+@import "common/swiper";
+@import "common/mixins";
+
+*{margin: 0;padding: 0;  }
+html,body{width:100%; font-family: "Microsoft YaHei"; color:#333;}
+ul {  list-style: none;  }
+dl,dd,ul,li,input,img,td ,button{  border: 0;  }
+a{  text-decoration: none;  }
+a:hover{ color:#fb921b }
+.fl{float:left;}
+.fr{float:right}
+.clear:after{content:"200B";display:block;font-size:0;height:0;clear:both;}
+.clear{clear:both;}
+.caps{font-variant: small-caps;}
+.tx-c{text-align: center}
+.hide{display: none !important;}
+
+
+.flex{display: -webkit-flex !important;display: flex !important;position:relative;}
+.flex-wrap{flex-wrap: wrap}
+.flex-column{flex-direction: column}
+.justifyContent-s{justify-content:start }
+.justifyContent-c{justify-content:center }
+.justifyContent-b{justify-content:space-between }
+.justifyContent-a{justify-content:space-around}
+.alignItems-s{align-items: flex-start }
+.alignItems-e{align-items: flex-end }
+.alignItems-c{align-items: center }
+.alignItems-b{align-items:baseline }
+.alignItems-stretch{align-items:  stretch}
+.alignContent-s{align-content:flex-start }
+.alignContent-e{align-content: flex-end }
+.alignContent-c{align-content:center }
+.alignContent-b{align-content:space-between }
+.alignContent-a{align-content:space-around }
+.flex-grow { flex-grow :1 }
+
+
+.container{width:1200px;min-width:1200px;margin:0 auto}
+.line-through{text-decoration: line-through}
+
+.font-weight{
+  font-weight:600;
+}
+.font20{
+  font-size: 20px;
+}
+.font24{
+  font-size: 22px;
+}
+.colhong{
+  color:#ff538f;
+}
+.colfff{
+  color:#fff;
+}
+.col333{
+  color:#333;
+}
+.col999{
+  color:#999;
+}
+.collan{
+  color:#27c7d1;
+}
+.backlan{
+  background-color:#27c7d1;
+}
+.backhong{
+  background-color:#ff538f;
+}
+.backfff{
+  background-color:#fff;
+}
+
+.header{
+  height:80px;
+  .logo{
+    width:190px;
+    height:60px;
+    @include bg-size(cover);
+    background-image: url("../images/logo.png");
+  }
+  .nav{
+    margin-top:20px;
+    ul{
+      li{
+        height:40px;
+        line-height: 40px;
+        float:left;
+        margin-right:60px;
+        a{
+          display:block;
+          color:#333;
+          font-size:20px;
+          &.collan{
+            color:#27c7d1;
+          }
+        }
+        &:last-child{
+          margin-right:0;
+        }
+
+      }
+      .li2{
+        position: relative;
+        &:hover{
+          .subnav{
+            display:block;
+          }
+        }
+        .subnav{
+          display: none;
+          width:640px;
+          padding:15px 0;
+          background:#fff;
+          position: absolute;
+
+          top:40px;
+          z-index: 10;
+          box-shadow: 0 -2px 5px #cccccc;
+          .subnav-item{
+            padding:0 30px;
+            float:left;
+            dt{
+              font-weight: 600;
+            }
+            dd{
+              height:30px;
+              line-height: 30px;
+              a{
+                display:block;
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer{
+  height:430px;
+  background-color: #2c3140;
+  .container{
+    h2{
+      line-height: 80px;
+    }
+    .shiyong{
+      display:inline-block;
+      input{
+        width:400px;
+        height:40px;
+        line-height: 40px;
+        background-color: transparent;
+        border:1px solid #27c7d1;
+        color:#9da093;
+        border-bottom-left-radius: 6px;
+        border-top-left-radius: 6px;
+        padding-left:10px;
+      }
+      button{
+        width:160px;
+        height:42px;
+        line-height: 42px;
+        text-align: center;
+        color:#fff;
+        border-bottom-right-radius: 6px;
+        border-top-right-radius: 6px;
+      }
+    }
+
+    .footer-center{
+      margin:30px 0;
+      .introlist{
+        .intro-item{
+          margin-right:70px;
+          text-align: left;
+          &:last-child{
+            margin-right:0;
+          }
+          dt{
+            line-height: 40px;
+            color:#ccc;
+          }
+          dd{
+            line-height: 40px;
+            color:#999;
+          }
+        }
+      }
+
+      .code{
+        margin-top:40px;
+        img{
+          width:100px;
+          height:100px;
+        }
+      }
+    }
+
+    .banquan{
+      color:#999;
+      font-size: 12px;
+    }
+  }
+}
+

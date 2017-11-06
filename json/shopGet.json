@@ -1,0 +1,19 @@
+{
+  "data":
+  [
+    {
+      "shop_id": "1",
+      "shop_name": "硚口店" ,
+      "addresss": "店铺地址1"
+    },
+    {
+      "shop_id": "2",
+      "shop_name": "三阳店" ,
+      "addresss": "店铺地址2"
+    }
+  ],
+  "message": "处理成功！",
+  "status": 1,
+  "code": 0
+}
+
