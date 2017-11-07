@@ -1135,6 +1135,11 @@ a:hover {
     color: #999;
     font-size: 12px; }
 
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 96%;
+    min-width: 96%;
+    margin: 0 2%; } }
 .content .solution h2 {
   display: inline-block;
   line-height: 81px;
@@ -1160,7 +1165,7 @@ a:hover {
 .content .solution .solution-list {
   margin: 35px 0; }
   .content .solution .solution-list .solution-item {
-    width: 390px;
+    width: 370px;
     margin-bottom: 20px; }
     .content .solution .solution-list .solution-item:hover .img img {
       transform: scale(1.2); }

@@ -61,25 +61,25 @@
    background-color: #f2f2f2;
    padding:40px 0;
    .box{
-     width:1200px;
+     width:1160px;
      margin:0 auto;
      overflow: hidden;
 
      position:relative;
      .tablist{
-       width:7200px;
+       width:6960px;
 
        position:relative;
        left:0;
        .tab{
-         width:1200px;
+         width:1160px;
 
          float:left;
          .tab-item{
            width:230px;
            height:190px;
            float:left;
-           margin-right:93px;
+           margin-right:80px;
            &:nth-child(4n){
              margin-right:0;
            }
@@ -114,7 +114,7 @@
     padding:20px 0;
     .advantage-item{
       float:left;
-      width:399px;
+      width:380px;
       height:160px;
       border-right:1px dotted #fff;
       &:last-child{
@@ -137,10 +137,11 @@
 
   .screenDetail{
     h3{
+      font-size: 26px;
       line-height:154px;
     }
     .swiper-container-screen{
-      width:1200px;
+      width:1160px;
       margin:0 auto;
       .screenlist{
         .screen-item{

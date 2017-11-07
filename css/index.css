@@ -1135,6 +1135,11 @@ a:hover {
     color: #999;
     font-size: 12px; }
 
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 96%;
+    min-width: 96%;
+    margin: 0 2%; } }
 .swiper-container-banner .swiper-container-horizontal > .swiper-pagination-bullets {
   bottom: 40px; }
 
@@ -1185,22 +1190,22 @@ a:hover {
     background-color: #f2f2f2;
     padding: 40px 0; }
     .content .bigTab .box {
-      width: 1200px;
+      width: 1160px;
       margin: 0 auto;
       overflow: hidden;
       position: relative; }
       .content .bigTab .box .tablist {
-        width: 7200px;
+        width: 6960px;
         position: relative;
         left: 0; }
         .content .bigTab .box .tablist .tab {
-          width: 1200px;
+          width: 1160px;
           float: left; }
           .content .bigTab .box .tablist .tab .tab-item {
             width: 230px;
             height: 190px;
             float: left;
-            margin-right: 93px; }
+            margin-right: 80px; }
             .content .bigTab .box .tablist .tab .tab-item:nth-child(4n) {
               margin-right: 0; }
             .content .bigTab .box .tablist .tab .tab-item .img {
@@ -1223,7 +1228,7 @@ a:hover {
     padding: 20px 0; }
     .content .advantage .advantage-item {
       float: left;
-      width: 399px;
+      width: 380px;
       height: 160px;
       border-right: 1px dotted #fff; }
       .content .advantage .advantage-item:last-child {
@@ -1238,9 +1243,10 @@ a:hover {
         .content .advantage .advantage-item .advantage-item-right h3 {
           line-height: 54px; }
   .content .screenDetail h3 {
+    font-size: 26px;
     line-height: 154px; }
   .content .screenDetail .swiper-container-screen {
-    width: 1200px;
+    width: 1160px;
     margin: 0 auto; }
     .content .screenDetail .swiper-container-screen .screenlist .screen-item {
       width: 310px;

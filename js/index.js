@@ -25,7 +25,7 @@ $(function() {
         console.log($index);
         $(this).addClass("collan").siblings().removeClass("collan");
        // $(".tablist").find(".tab").eq($index).removeClass("hide").siblings().addClass("hide");
-        $(".tablist").stop().animate({"left":-$index*1200},500)
+        $(".tablist").stop().animate({"left":-$index*1160},500)
     });
 
     //公司图切换

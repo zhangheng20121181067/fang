@@ -1135,6 +1135,11 @@ a:hover {
     color: #999;
     font-size: 12px; }
 
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 96%;
+    min-width: 96%;
+    margin: 0 2%; } }
 html, body, .content, .container, .tiyan {
   height: 100%; }
 

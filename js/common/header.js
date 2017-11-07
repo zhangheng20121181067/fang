@@ -10,5 +10,14 @@ $(function() {
 
     $(".subnav a").on("click",function(){
         window.location.href="product.html";
-    })
+    });
+
+    if($('html').height()<$(document).height()){
+        $(".footer").css({
+            "width":"100%",
+            "position":"absolute",
+            "bottom":0
+        });
+        //window.location.reload();
+    }
 });

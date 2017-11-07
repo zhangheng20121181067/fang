@@ -1135,6 +1135,11 @@ a:hover {
     color: #999;
     font-size: 12px; }
 
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 96%;
+    min-width: 96%;
+    margin: 0 2%; } }
 .content .setionone {
   margin-top: 15px; }
   .content .setionone .setionone-left img {
@@ -1255,7 +1260,7 @@ a:hover {
         margin: 30px 0 10px; }
   .content .setiontwo .setiontwo-right {
     border: 1px solid #ccc;
-    width: 900px;
+    width: 850px;
     padding: 0 15px; }
     .content .setiontwo .setiontwo-right .nav {
       height: 56px;
@@ -1285,7 +1290,7 @@ a:hover {
       .content .setiontwo .setiontwo-right .tx-c p {
         line-height: 70px; }
       .content .setiontwo .setiontwo-right .tx-c .bigimglist {
-        width: 730px;
+        width: 680px;
         height: 410px;
         overflow: hidden; }
         .content .setiontwo .setiontwo-right .tx-c .bigimglist img {
