@@ -1043,7 +1043,7 @@ a:hover {
   .header .logo {
     width: 190px;
     height: 60px;
-    background-size: cover;
+    background-size: initial;
     background-repeat: no-repeat;
     background-position: center;
     display: block;
@@ -1051,8 +1051,8 @@ a:hover {
   .header .nav {
     margin-top: 20px; }
     .header .nav ul li {
-      height: 40px;
-      line-height: 40px;
+      height: 50px;
+      line-height: 50px;
       float: left;
       margin-right: 60px; }
       .header .nav ul li a {
@@ -1073,20 +1073,24 @@ a:hover {
         padding: 15px 0;
         background: #fff;
         position: absolute;
-        top: 40px;
+        top: 50px;
         z-index: 10;
         box-shadow: 0 -2px 5px #cccccc; }
         .header .nav ul .li2 .subnav .subnav-item {
-          padding: 0 30px;
+          padding: 0 25px;
           float: left; }
           .header .nav ul .li2 .subnav .subnav-item dt {
             font-weight: 600; }
+            .header .nav ul .li2 .subnav .subnav-item dt a {
+              font-size: 16px; }
           .header .nav ul .li2 .subnav .subnav-item dd {
             height: 30px;
             line-height: 30px; }
             .header .nav ul .li2 .subnav .subnav-item dd a {
               display: block;
               font-size: 16px; }
+              .header .nav ul .li2 .subnav .subnav-item dd a:hover {
+                color: #27c7d1; }
 
 .footer {
   height: 430px;
@@ -1099,6 +1103,7 @@ a:hover {
       width: 400px;
       height: 40px;
       line-height: 40px;
+      margin: 0;
       background-color: transparent;
       border: 1px solid #27c7d1;
       color: #9da093;
@@ -1140,8 +1145,8 @@ a:hover {
     width: 96%;
     min-width: 96%;
     margin: 0 2%; } }
-.swiper-container-banner .swiper-container-horizontal > .swiper-pagination-bullets {
-  bottom: 40px; }
+.swiper-container-banner.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 30px; }
 
 .banner {
   position: relative; }
@@ -1154,11 +1159,11 @@ a:hover {
       background-position: center;
       display: block; }
     .banner .swiper-container .slide1 {
-      background-image: url("../images/indexbanner1.jpg"); }
+      background-image: url("../images/indexbanner01.png"); }
     .banner .swiper-container .slide2 {
-      background-image: url("../images/indexbanner2.jpg"); }
+      background-image: url("../images/indexbanner02.png"); }
     .banner .swiper-container .slide3 {
-      background-image: url("../images/indexbanner3.jpg"); }
+      background-image: url("../images/indexbanner03.png"); }
   .banner .bannerpos {
     width: 1200px;
     border-radius: 10px;
@@ -1179,11 +1184,23 @@ a:hover {
   .content .siteNav ul {
     display: inline-block; }
     .content .siteNav ul li {
-      line-height: 60px;
+      padding: 0 50px;
+      height: 45px;
+      line-height: 45px;
+      overflow: hidden;
       float: left;
-      margin-right: 70px;
       font-size: 20px;
-      cursor: pointer; }
+      cursor: pointer;
+      /* &:before{
+         content:"";
+         border-top:10px solid red;
+         border-bottom:10px solid transparent;
+         border-left:10px solid transparent;
+         border-right:10px solid transparent;
+         position:relative;
+         left:20px;
+         bottom:-60px;
+       }*/ }
       .content .siteNav ul li:last-child {
         margin-right: 0; }
   .content .bigTab {
@@ -1213,10 +1230,15 @@ a:hover {
               overflow: hidden; }
               .content .bigTab .box .tablist .tab .tab-item .img img {
                 width: 230px;
-                height: 130px; }
+                height: 130px;
+                transition: transform .5s ease; }
             .content .bigTab .box .tablist .tab .tab-item p {
               line-height: 60px;
               text-align: center; }
+            .content .bigTab .box .tablist .tab .tab-item:hover .img img {
+              transform: scale(1.2); }
+            .content .bigTab .box .tablist .tab .tab-item:hover p {
+              color: #27c7d1; }
     .content .bigTab .use {
       width: 180px;
       line-height: 50px;
@@ -1326,15 +1348,41 @@ a:hover {
           transform: rotate(180deg); }
   .content .companylunbo {
     padding: 20px 0 10px; }
+    .content .companylunbo .container {
+      height: 206px;
+      overflow: hidden; }
   .content .news {
     margin: 20px 0; }
-    .content .news .imgdesc img {
-      width: 800px;
-      height: 250px; }
+    .content .news .imgdesc .img {
+      width: 440px;
+      height: 240px; }
+      .content .news .imgdesc .img img {
+        width: 100%;
+        height: 100%; }
     .content .news .imgdesc p {
-      padding: 0 30px;
+      width: 700px;
+      padding: 0 20px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 7;
+      overflow: hidden;
       line-height: 34px;
-      font-size: 18px; }
+      font-size: 18px;
+      /* height:238px;
+       overflow:hidden;
+       position:relative;
+       padding:0 30px;
+       line-height: 34px;
+       font-size: 18px;
+       &:after{
+         content:"...";
+         font-weight:bold;
+         position:absolute;
+         bottom:0;
+         right:5px;
+         padding:0 20px 1px 25px;
+         background:url(http://newimg88.b0.upaiyun.com/newimg88/2014/09/ellipsis_bg.png) repeat-y;
+       }*/ }
     .content .news .news-list {
       margin-top: 10px; }
       .content .news .news-list li {
@@ -1343,5 +1391,7 @@ a:hover {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap; }
+        .content .news .news-list li a {
+          color: #333; }
 
 /*# sourceMappingURL=index.css.map */

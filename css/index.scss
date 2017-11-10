@@ -1,7 +1,7 @@
 @import "common";
 @import "common/mixins";
-.swiper-container-banner .swiper-container-horizontal > .swiper-pagination-bullets{
-  bottom:40px;
+.swiper-container-banner.swiper-container-horizontal > .swiper-pagination-bullets{
+  bottom:30px;
 }
 
 
@@ -16,7 +16,7 @@
     }
     @for $i from 1 through 3 {
       .slide#{$i}{
-        background-image:url('../images/indexbanner#{$i}.jpg');
+        background-image:url('../images/indexbanner0#{$i}.png');
       }
     }
   }
@@ -45,14 +45,27 @@
     ul{
       display: inline-block;
       li{
-        line-height: 60px;
+        padding:0 50px;
+        height:45px;
+        line-height: 45px;
+        overflow: hidden;
         float:left;
-        margin-right:70px;
         font-size: 20px;
         cursor: pointer;
         &:last-child{
           margin-right:0;
         }
+
+       /* &:before{
+          content:"";
+          border-top:10px solid red;
+          border-bottom:10px solid transparent;
+          border-left:10px solid transparent;
+          border-right:10px solid transparent;
+          position:relative;
+          left:20px;
+          bottom:-60px;
+        }*/
       }
     }
   }
@@ -80,6 +93,7 @@
            height:190px;
            float:left;
            margin-right:80px;
+
            &:nth-child(4n){
              margin-right:0;
            }
@@ -89,11 +103,22 @@
              img{
                width:230px;
                height:130px;
+               transition: transform .5s ease;
              }
            }
            p{
              line-height:60px;
              text-align: center;
+           }
+           &:hover{
+             .img{
+               img{
+                transform: scale(1.2);
+               }
+             }
+             p{
+               color:#27c7d1;
+             }
            }
          }
        }
@@ -250,20 +275,49 @@
   }
 
   .companylunbo{
-   padding:20px 0 10px
+   padding:20px 0 10px;
+    .container{
+      height:206px;
+      overflow: hidden;
+    }
   }
 
   .news{
     margin:20px 0;
     .imgdesc{
-      img{
-        width:800px;
-        height:250px;
-      }
+     .img{
+       width:440px;
+       height:240px;
+       img{
+         width:100%;
+         height:100%;
+       }
+     }
       p{
+        width:700px;
+        padding:0 20px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 7;
+        overflow: hidden;
+
+        line-height: 34px;
+        font-size: 18px;
+       /* height:238px;
+        overflow:hidden;
+        position:relative;
         padding:0 30px;
         line-height: 34px;
         font-size: 18px;
+        &:after{
+          content:"...";
+          font-weight:bold;
+          position:absolute;
+          bottom:0;
+          right:5px;
+          padding:0 20px 1px 25px;
+          background:url(http://newimg88.b0.upaiyun.com/newimg88/2014/09/ellipsis_bg.png) repeat-y;
+        }*/
       }
     }
     .news-list{
@@ -275,6 +329,9 @@
         overflow: hidden;
         text-overflow:ellipsis;
         white-space: nowrap;
+        a{
+          color:#333;
+        }
       }
     }
   }

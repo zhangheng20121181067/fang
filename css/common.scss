@@ -79,15 +79,15 @@ a:hover{ color:#fb921b }
   .logo{
     width:190px;
     height:60px;
-    @include bg-size(cover);
+    @include bg-size(initial);
     background-image: url("../images/logo.png");
   }
   .nav{
     margin-top:20px;
     ul{
       li{
-        height:40px;
-        line-height: 40px;
+        height:50px;
+        line-height: 50px;
         float:left;
         margin-right:60px;
         a{
@@ -117,14 +117,17 @@ a:hover{ color:#fb921b }
           background:#fff;
           position: absolute;
 
-          top:40px;
+          top:50px;
           z-index: 10;
           box-shadow: 0 -2px 5px #cccccc;
           .subnav-item{
-            padding:0 30px;
+            padding:0 25px;
             float:left;
             dt{
               font-weight: 600;
+              a{
+                font-size:16px;
+              }
             }
             dd{
               height:30px;
@@ -132,6 +135,9 @@ a:hover{ color:#fb921b }
               a{
                 display:block;
                 font-size: 16px;
+                &:hover{
+                  color:#27c7d1;
+                }
               }
             }
           }
@@ -154,6 +160,7 @@ a:hover{ color:#fb921b }
         width:400px;
         height:40px;
         line-height: 40px;
+        margin:0;
         background-color: transparent;
         border:1px solid #27c7d1;
         color:#9da093;

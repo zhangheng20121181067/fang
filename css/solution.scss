@@ -55,17 +55,33 @@
            }
          }
          h3{
+           font-weight: 500;
            line-height: 60px;
            border-bottom: 1px dotted #ccc;
          }
          p{
            text-align: left;
            padding-top:20px;
-           line-height: 24px;
+           line-height: 22px;
+           font-size:14px;
          }
        }
      }
    }
+}
+
+@media screen and (max-width: 1200px){
+
+  .footer{
+    width:1200px;
+    position: absolute;
+    bottom:0;
+  }
+
+  .content .solution .solution-list .solution-item{
+    margin-bottom:40px;
+  }
+
 }
 
 

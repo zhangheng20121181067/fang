@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>产品价格</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200">
+    <link rel="stylesheet" href="../css/module.css">
+    <script src="../js/common/jquery-3.1.0.min.js"></script>
+    <script src="../js/common/tpls.js"></script>
+    <script src="../js/common/header.js"></script>
+    <script src="../js/common/swiper-3.4.2.min.js"></script>
+    <script src="../js/module.js"></script>
+</head>
+<body>
+
+<div class="header">
+    <div class="container clear">
+        <div class="logo fl"></div>
+        <div class="nav fr ">
+             <ul class="clear">
+                 <li><a class="one collan" href="../index.html">首页</a></li>
+                 <li class="li2">
+                     <a class="two" href="javascript:;">产品价格</a>
+                     <div class="subnav clear">
+                         <div class="subnav-item">
+                             <dl>
+                                 <dt><a href="module.html?flag=qiandao">现场签到</a></dt>
+                                 <dd><a href="detail/detail.html?index=1">消息墙</a></dd>
+                                 <dd><a href="detail/detail.html?index=2">审核签到</a></dd>
+                                 <dd><a href="detail/detail.html?index=3">弹幕</a></dd>
+                                 <dd><a href="module.html">全部功能</a></dd>
+                             </dl>
+                         </div>
+                         <div class="subnav-item">
+                             <dl>
+                                 <dt><a href="module.html?flag=chpujiang">现场抽奖</a></dt>
+                                 <dd><a href="detail/detail.html?index=4">摇红包</a></dd>
+                                 <dd><a href="detail/detail.html?index=5">高级抽奖</a></dd>
+                                 <dd><a href="detail/detail.html?index=6">摇奖机</a></dd>
+                                 <dd><a href="module.html">全部功能</a></dd>
+                             </dl>
+                         </div>
+                         <div class="subnav-item">
+                             <dl>
+                                 <dt><a href="module.html?flag=hudong">现场互动</a></dt>
+                                 <dd><a href="detail/detail.html?index=7">摇一摇</a></dd>
+                                 <dd><a href="detail/detail.html?index=8">接接乐</a></dd>
+                                 <dd><a href="detail/detail.html?index=9">极速前进</a></dd>
+                                 <dd><a href="module.html">全部功能</a></dd>
+                             </dl>
+                         </div>
+                         <div class="subnav-item">
+                             <dl>
+                                 <dt><a href="module.html?flag=3Dhudong">3D互动</a></dt>
+                                 <dd><a href="detail/detail.html?index=10">3D签到</a></dd>
+                                 <dd><a href="detail/detail.html?index=11">魔方抽奖</a></dd>
+                                 <dd><a href="detail/detail.html?index=12">3D立方体拼图</a></dd>
+                                 <dd><a href="module.html">全部功能</a></dd>
+                             </dl>
+                         </div>
+                         <div class="subnav-item hide">
+                             <dl>
+                                 <dt><a href="module.html?flag=fenxi">会前会后</a></dt>
+                                 <dd><a href="javascript:;">数据报表</a></dd>
+                                 <dd><a href="javascript:;">H5邀请函</a></dd>
+                             </dl>
+                         </div>
+                     </div>
+                 </li>
+                 <li><a class="three" href="../annualMeeting.html">年会套餐</a></li>
+                 <li><a class="four" href="../case.html">精选案例</a></li>
+                 <li><a class="five" href="../solution.html">解决方案</a></li>
+                 <li style="display:none"><a class="six" href="javascript:;">帮助中心</a></li>
+                 <li><a class="seven" href="../tiyan.html">免费体验</a></li>
+             </ul>
+        </div>
+    </div>
+</div>
+
+<div class="content">
+    <div class="sousuocart backlan ">
+        <div class="container ">
+            <span class="fl">清空条件</span>
+            <input class="fl"  type="text">
+            <div class="sousuo fl"><img src="../images/modulesousuo.jpg" alt=""></div>
+
+            <div class="cart fr">我的购物车（<span>1</span>）</div>
+        </div>
+    </div>
+
+    <div class="lei">
+       <div class="container">
+           <div class="same lei-site clear">
+               <span class="fl">活动场景&nbsp;&nbsp;></span>
+               <ul class="fl">
+                   <li class="on">全部</li>
+                   <li>企业年会</li>
+                   <li>会议论坛</li>
+                   <li>户外活动</li>
+                   <li>公共关系</li>
+                   <li>企业营销</li>
+                   <li>婚庆典礼</li>
+               </ul>
+           </div>
+           <div class="same lei-func clear">
+               <span class="fl">功能分类&nbsp;&nbsp;></span>
+               <ul class="fl">
+                   <li class="on">全部</li>
+                   <li>3D功能</li>
+                   <li>签到类</li>
+                   <li>互动类</li>
+                   <li>抽奖类</li>
+                   <li>增值服务类</li>
+               </ul>
+           </div>
+           <div class="same lei-price clear">
+               <span class="fl">价格区间&nbsp;&nbsp;></span>
+               <ul class="fl">
+                   <li class="on">全部</li>
+                   <li>500</li>
+                   <li>500-1000</li>
+                   <li>100-2000</li>
+                   <li>2000以上</li>
+               </ul>
+           </div>
+       </div>
+    </div>
+
+    <div class="func">
+        <div class="container tx-c">
+            <div class="func-list">
+                <div class="func-item">
+                    <h3>3D功能</h3>
+                    <ul class="clear">
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon2mingdan.jpg" alt="">
+                                    <p>3D射箭</p>
+                                    <p>￥3000</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module11.png" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon4qiangbao.jpg" alt="">
+                                    <p>3D抢红包</p>
+                                    <p>￥2000</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module12.png" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon4litu.jpg" alt="">
+                                    <p>3D立方体拼图</p>
+                                    <p>￥2000</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module13.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon4lihuan.jpg" alt="">
+                                    <p>3D立方体变幻</p>
+                                    <p>￥2000</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module14.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon4shaiche.jpg" alt="">
+                                    <p>3D赛车</p>
+                                    <p>￥3000</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module15.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon4jidao.jpg" alt="">
+                                    <p>3D几何签到</p>
+                                    <p>￥2500</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module16.png" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon4didong.jpg" alt="">
+                                    <p>3D地球启动</p>
+                                    <p>￥1500</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module17.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon4tidong.jpg" alt="">
+                                    <p>3D体感启动</p>
+                                    <p>￥1500</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module18.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon4dongtu.jpg" alt="">
+                                    <p>3D动态拼图</p>
+                                    <p>￥2000</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module19.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon4dingtu.jpg" alt="">
+                                    <p>3D定制拼图</p>
+                                    <p>￥2000</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module110.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon4Ddao.jpg" alt="">
+                                    <p>3DDNA签到</p>
+                                    <p>￥1500</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module111.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon4danmu.jpg" alt="">
+                                    <p>3D弹幕</p>
+                                    <p>￥2000</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module112.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon4duojiang.jpg" alt="">
+                                    <p>3D多人抽奖</p>
+                                    <p>￥2000</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module113.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon4daoshi.jpg" alt="">
+                                    <p>3D倒计时</p>
+                                    <p>￥1000</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module114.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon4moijiang.jpg" alt="">
+                                    <p>3D魔方抽奖</p>
+                                    <p>￥2000</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module115.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon4qiudao.jpg" alt="">
+                                    <p>3D球形签到</p>
+                                    <p>￥1500</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module116.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon4yaoyao.jpg" alt="">
+                                    <p>3D摇一摇</p>
+                                    <p>￥3000</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module117.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon4yindao.jpg" alt="">
+                                    <p>3D银河签到</p>
+                                    <p>￥1500</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module118.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon4zadai.jpg" alt="">
+                                    <p>3D砸福袋</p>
+                                    <p>￥3000</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module119.png" alt="">
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="func-item">
+                    <h3>签到类</h3>
+                    <ul class="clear">
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon1wenjuandao.jpg" alt="">
+                                    <p>问卷签到</p>
+                                    <p>￥500</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module21.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon1shehedao.jpg" alt="">
+                                    <p>审核签到</p>
+                                    <p>￥500</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module22.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon1ibeadao.jpg" alt="">
+                                    <p>ibeacon签到</p>
+                                    <p>￥500</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module23.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon1jiabinshow.jpg" alt="">
+                                    <p>嘉宾展示</p>
+                                    <p>￥0</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module24.png" alt="">
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon1shouxiedao.jpg" alt="">
+                                    <p>手写签到</p>
+                                    <p>￥100</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module25.png" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon1biaoxing.jpg" alt="">
+                                    <p>标星消息</p>
+                                    <p>￥100</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module26.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon1qiang.jpg" alt="">
+                                    <p>消息墙</p>
+                                    <p>￥0</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module27.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon1danmu.jpg" alt="">
+                                    <p>弹幕</p>
+                                    <p>￥100</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module28.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon1definebg.jpg" alt="">
+                                    <p>自定义背景</p>
+                                    <p>￥100</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module29.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon1logoshow.jpg" alt="">
+                                    <p>LOGO展示</p>
+                                    <p>￥500</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module210.JPG" alt="">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="func-item">
+                    <h3>互动类</h3>
+                    <ul class="clear">
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon2qiang.jpg" alt="">
+                                    <p>签到刮刮卡</p>
+                                    <p>￥500</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module31.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon3qiang.jpg" alt="">
+                                    <p>照片墙</p>
+                                    <p>￥100</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module32.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon3pangyao.jpg" alt="">
+                                    <p>螃蟹摇一摇</p>
+                                    <p>￥400</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module33.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon3kaixin.jpg" alt="">
+                                    <p>开心拔河</p>
+                                    <p>￥400</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module34.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon3yao.jpg" alt="">
+                                    <p>图片摇一摇</p>
+                                    <p>￥400</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module35.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon3dinghuo.jpg" alt="">
+                                    <p>订货宝</p>
+                                    <p>￥400</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module36.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon3dashang.jpg" alt="">
+                                    <p>打赏</p>
+                                    <p>￥500</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module37.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon3kaixingua.jpg" alt="">
+                                    <p>开心刮刮卡</p>
+                                    <p>￥500</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module38.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon3shuqian.jpg" alt="">
+                                    <p>数钱</p>
+                                    <p>￥500</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module39.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon3taolun.jpg" alt="">
+                                    <p>话题讨论</p>
+                                    <p>￥100</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module310.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon3dati.jpg" alt="">
+                                    <p>开心答题</p>
+                                    <p>￥500</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module311.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon3share.jpg" alt="">
+                                    <p>分享大比拼</p>
+                                    <p>￥400</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module312.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon3jisu.jpg" alt="">
+                                    <p>极速前进</p>
+                                    <p>￥500</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module313.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon3jiejiele.jpg" alt="">
+                                    <p>接接乐</p>
+                                    <p>￥500</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module314.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon3tuku.jpg" alt="">
+                                    <p>图片库</p>
+                                    <p>￥100</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module315.png" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon3teamyao.jpg" alt="">
+                                    <p>团队摇一摇</p>
+                                    <p>￥400</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module316.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon3pingfen.jpg" alt="">
+                                    <p>节目评分</p>
+                                    <p>￥200</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module317.png" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon3jitou.jpg" alt="">
+                                    <p>即时投票</p>
+                                    <p>￥200</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module318.png" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon3tupiao.jpg" alt="">
+                                    <p>图片投票</p>
+                                    <p>￥400</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module319.png" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon3jishi.jpg" alt="">
+                                    <p>即时配对</p>
+                                    <p>￥100</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module320.png" alt="">
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon3zhufu.jpg" alt="">
+                                    <p>祝福树</p>
+                                    <p>￥400</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module321.png" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon3yao.jpg" alt="">
+                                    <p>摇一摇</p>
+                                    <p>￥400</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module322.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon3bandeng.jpg" alt="">
+                                    <p>抢板凳</p>
+                                    <p>￥500</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module323.png" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon3jiteam.jpg" alt="">
+                                    <p>即时组队</p>
+                                    <p>￥100</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module324.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon3chat.jpg" alt="">
+                                    <p>聊天室</p>
+                                    <p>￥0</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module325.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon3gundong.jpg" alt="">
+                                    <p>滚动通知</p>
+                                    <p>￥400</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module326.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="func-item">
+                    <h3>抽奖类</h3>
+                    <ul class="clear">
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon2kaixinka.jpg" alt="">
+                                    <p>开心集卡片</p>
+                                    <p>￥400</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module41.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon2yanzhi.jpg" alt="">
+                                    <p>颜值抽奖</p>
+                                    <p>￥400</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module42.png" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon2yaobag.jpg" alt="">
+                                    <p>抢红包</p>
+                                    <p>￥500</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module43.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon2qiang.jpg" alt="">
+                                    <p>3D射箭</p>
+                                    <p>￥3000</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module44.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon2kaixinyao.jpg" alt="">
+                                    <p>开心摇奖机</p>
+                                    <p>￥100</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module45.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon2kaixinzhuan.jpg" alt="">
+                                    <p>开心大转盘</p>
+                                    <p>￥400</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module46.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon2mingdan.jpg" alt="">
+                                    <p>名单抽奖</p>
+                                    <p>￥100</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module47.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon2gaoji.jpg" alt="">
+                                    <p>3D射箭</p>
+                                    <p>￥3000</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module48.png" alt="">
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon2gundong.jpg" alt="">
+                                    <p>滚动抽奖</p>
+                                    <p>￥100</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module49.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="func-item">
+                    <h3>增值服务类</h3>
+                    <ul class="clear">
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon92.jpg" alt="">
+                                    <p>硬件租赁</p>
+                                    <p>议价</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module51.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon91.jpg" alt="">
+                                    <p>现场执行</p>
+                                    <p>议价</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module52.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon94.jpg" alt="">
+                                    <p>定制功能</p>
+                                    <p>议价</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module53.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="rotate1">
+                                    <img class="posimg" src="../images/modulenew.jpg" alt="">
+                                    <img src="../images/icon95.jpg" alt="">
+                                    <p>定制拼图</p>
+                                    <p>议价</p>
+                                </div>
+                                <div class="rotate2">
+                                    <img src="../images/module54.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.write(footerStr)
+</script>
+
+</body>
+</html>

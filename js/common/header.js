@@ -8,16 +8,15 @@ $(function() {
         $(this).addClass("collan").parents("li").siblings().children().removeClass("collan");
     });*/
 
-    $(".subnav a").on("click",function(){
-        window.location.href="product.html";
-    });
+   /* $(".subnav a").on("click",function(){
+        window.location.href="./product/detail/detail.html";
+    });*/
 
-    if($('html').height()<$(document).height()){
+   /* if($('html').height()<$(document).height()){
         $(".footer").css({
             "width":"100%",
             "position":"absolute",
             "bottom":0
         });
-        //window.location.reload();
-    }
+    }*/
 });

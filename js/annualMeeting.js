@@ -4,6 +4,7 @@
 $(function() {
     $(".nav>ul>li").find("a.three").addClass("collan").parents("li").siblings().children().removeClass("collan");
 
+    //第一部分图片切换
     $(".bigpic .left1").hover(
         function(){
             $(".bigpic .center1,.bigpic .right2").removeClass("hide");
@@ -22,5 +23,12 @@ $(function() {
             $(".bigpic .left1").removeClass("hide");
         }
     );
+
+    //‘好好办’‘简单办’解决方案切换
+    $(".solution .tabs").find(".tab-item").on("click",function(){
+        var $index=$(this).index();
+       $(this).addClass("on").siblings().removeClass("on");
+        $(".solution .contentchange").find(".contentlist").eq($index).removeClass("hide").siblings().addClass("hide");;
+    })
 
 });
