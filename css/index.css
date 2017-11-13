@@ -1042,7 +1042,7 @@ a:hover {
   height: 80px; }
   .header .logo {
     width: 190px;
-    height: 60px;
+    height: 80px;
     background-size: initial;
     background-repeat: no-repeat;
     background-position: center;
@@ -1181,28 +1181,55 @@ a:hover {
   margin-top: 70px; }
   .content h2 {
     line-height: 80px; }
-  .content .siteNav ul {
-    display: inline-block; }
-    .content .siteNav ul li {
-      padding: 0 50px;
-      height: 45px;
-      line-height: 45px;
-      overflow: hidden;
-      float: left;
-      font-size: 20px;
-      cursor: pointer;
-      /* &:before{
-         content:"";
-         border-top:10px solid red;
-         border-bottom:10px solid transparent;
-         border-left:10px solid transparent;
-         border-right:10px solid transparent;
-         position:relative;
-         left:20px;
-         bottom:-60px;
-       }*/ }
-      .content .siteNav ul li:last-child {
-        margin-right: 0; }
+  .content .siteNav {
+    margin-bottom: 10px; }
+    .content .siteNav ul {
+      display: inline-block; }
+      .content .siteNav ul li {
+        padding: 0 35px;
+        height: 45px;
+        line-height: 45px;
+        overflow: hidden;
+        float: left;
+        font-size: 20px;
+        cursor: pointer;
+        /* &:before{
+           content:"";
+           border-top:10px solid red;
+           border-bottom:10px solid transparent;
+           border-left:10px solid transparent;
+           border-right:10px solid transparent;
+           position:relative;
+           left:20px;
+           bottom:-60px;
+         }*/ }
+        .content .siteNav ul li .bigbox .icon {
+          width: 45px;
+          height: 45px;
+          float: left;
+          background-size: initial;
+          background-repeat: no-repeat;
+          background-position: center;
+          display: block;
+          background-image: url(../images/wxz-i.png);
+          background-position: 0 0; }
+          .content .siteNav ul li .bigbox .icon.on {
+            background-image: url(../images/yxz-i.png);
+            background-position: 0 0; }
+        .content .siteNav ul li .bigbox.bigbox1 .icon {
+          background-position: -4px -2px; }
+        .content .siteNav ul li .bigbox.bigbox2 .icon {
+          background-position: -6px -48px; }
+        .content .siteNav ul li .bigbox.bigbox3 .icon {
+          background-position: -50px -50px; }
+        .content .siteNav ul li .bigbox.bigbox4 .icon {
+          background-position: -97px -48px; }
+        .content .siteNav ul li .bigbox.bigbox5 .icon {
+          background-position: -54px -2px; }
+        .content .siteNav ul li .bigbox.bigbox6 .icon {
+          background-position: -100px -2px; }
+        .content .siteNav ul li:last-child {
+          margin-right: 0; }
   .content .bigTab {
     background-color: #f2f2f2;
     padding: 40px 0; }
@@ -1256,7 +1283,25 @@ a:hover {
       .content .advantage .advantage-item:last-child {
         border-right: 0; }
       .content .advantage .advantage-item .advantage-item-left {
+        width: 60px;
+        height: 60px;
+        overflow: hidden;
         margin-left: 45px; }
+        .content .advantage .advantage-item .advantage-item-left .bigbox {
+          height: 120px; }
+          .content .advantage .advantage-item .advantage-item-left .bigbox div {
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: block;
+            width: 60px;
+            height: 60px; }
+        .content .advantage .advantage-item .advantage-item-left.advantage-item-left1 .bigbox div {
+          background-image: url(../images/advan1.png); }
+        .content .advantage .advantage-item .advantage-item-left.advantage-item-left2 .bigbox div {
+          background-image: url(../images/advan2.png); }
+        .content .advantage .advantage-item .advantage-item-left.advantage-item-left3 .bigbox div {
+          background-image: url(../images/advan3.png); }
       .content .advantage .advantage-item .advantage-item-right {
         width: 220px;
         margin-left: 18px;

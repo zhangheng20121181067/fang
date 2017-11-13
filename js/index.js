@@ -73,5 +73,18 @@ $(function() {
         }
         $(".logolist").find("img").eq($companyIndex).addClass("on").siblings().removeClass("on");
         $(".desclist").find("p").eq($companyIndex).removeClass("hide").siblings().addClass("hide");
-    })
+    });
+
+
+    //优势切换
+    $(".advantage .advantage-item").hover(function(){
+        var $index=$(this).index();
+        //if(!$(this).is(":animated")) {
+        $(this).find(".advantage-item-left .bigbox").stop(true).animate({
+            "marginTop": "-60px"
+        }, 500).parents(".advantage-item").siblings().find(".advantage-item-left .bigbox").stop(true).animate({
+            "marginTop": "0px"
+        }, 500);
+        // }
+    });
 });

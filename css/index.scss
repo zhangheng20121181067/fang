@@ -42,16 +42,61 @@
     line-height: 80px;
   }
   .siteNav{
+    margin-bottom: 10px;
     ul{
       display: inline-block;
       li{
-        padding:0 50px;
+        padding:0 35px;
         height:45px;
         line-height: 45px;
         overflow: hidden;
         float:left;
         font-size: 20px;
         cursor: pointer;
+        .bigbox{
+          .icon{
+            width:45px;
+            height:45px;
+            float: left;
+            @include bg-size(initial);
+            background-image: url(../images/wxz-i.png);
+            background-position: 0 0;
+            &.on{
+              background-image: url(../images/yxz-i.png);
+              background-position: 0 0;
+            }
+          }
+          &.bigbox1{
+           .icon{
+             background-position: -4px -2px;
+           }
+          }
+          &.bigbox2{
+            .icon{
+              background-position: -6px -48px;
+            }
+          }
+          &.bigbox3{
+            .icon{
+              background-position: -50px -50px;
+            }
+          }
+          &.bigbox4{
+            .icon{
+              background-position: -97px -48px;
+            }
+          }
+          &.bigbox5{
+            .icon{
+              background-position: -54px -2px;
+            }
+          }
+          &.bigbox6{
+            .icon{
+              background-position: -100px -2px;
+            }
+          }
+        }
         &:last-child{
           margin-right:0;
         }
@@ -146,7 +191,39 @@
         border-right:0;
       }
       .advantage-item-left{
+          width:60px;
+          height:60px;
+          overflow: hidden;
           margin-left:45px;
+         .bigbox{
+           height:120px;
+           div{
+             @include bg-size(contain);
+             width:60px;
+             height:60px;
+           }
+         }
+        &.advantage-item-left1{
+         .bigbox{
+           div{
+             background-image: url(../images/advan1.png);
+           }
+         }
+        }
+        &.advantage-item-left2{
+          .bigbox{
+            div{
+              background-image: url(../images/advan2.png);
+            }
+          }
+        }
+        &.advantage-item-left3{
+          .bigbox{
+            div{
+              background-image: url(../images/advan3.png);
+            }
+          }
+        }
       }
       .advantage-item-right{
         width:220px;
