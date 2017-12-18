@@ -1,0 +1,81 @@
+@import "common";
+@import "common/mixins";
+
+
+$fonSize24:24px;
+$fonSize16:16px;
+$fonSize18:18px;
+
+$fonSize22:22px;
+$fonSize30:30px;
+
+
+
+.main{
+  margin-bottom:100px;
+
+  .item{
+    .introduce_title{
+      margin:60px 0 40px;
+      h3{
+        font-size: $fonSize30;
+        line-height: 80px;
+        text-align: center;
+      }
+      p{
+        margin:0 100px;
+        font-size: $fonSize18;
+        line-height: 36px;
+      }
+    }
+    .topicPhoto{
+      height:420px;
+    }
+    .article{
+      width:800px;
+      margin: auto;
+      h4{
+        font-size: $fonSize22;
+        line-height: 80px;
+      }
+      p{
+        font-size: $fonSize16;
+        line-height: 28px;
+        margin-bottom:20px;
+      }
+      img{
+        width:800px;
+        margin:20px 0 40px;
+      }
+      h5{
+        font-size: $fonSize18;
+        line-height: 80px;
+      }
+    }
+    img{
+      width:100%;
+    }
+
+    &.hide{
+      display:none;
+    }
+  }
+
+
+  #section01{
+    .topicPhoto{
+      background:  url(../images/section01topic.png) no-repeat center;
+    }
+  }
+  #section02{
+    .topicPhoto{
+      background:  url(../images/section02img01.jpg) no-repeat center;
+    }
+  }
+  #section03{
+    .topicPhoto{
+      background:  url(../images/section03img01.jpg) no-repeat center;
+    }
+  }
+
+}

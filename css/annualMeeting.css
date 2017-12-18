@@ -1043,7 +1043,7 @@ a:hover {
   .header .logo {
     width: 190px;
     height: 80px;
-    background-size: initial;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     display: block;
@@ -1098,7 +1098,8 @@ a:hover {
   .footer .container h2 {
     line-height: 80px; }
   .footer .container .shiyong {
-    display: inline-block; }
+    /*  display:inline-block;*/
+    display: none; }
     .footer .container .shiyong input {
       width: 400px;
       height: 40px;
@@ -1121,7 +1122,7 @@ a:hover {
   .footer .container .footer-center {
     margin: 30px 0; }
     .footer .container .footer-center .introlist .intro-item {
-      margin-right: 70px;
+      margin-right: 50px;
       text-align: left; }
       .footer .container .footer-center .introlist .intro-item:last-child {
         margin-right: 0; }
@@ -1131,14 +1132,22 @@ a:hover {
       .footer .container .footer-center .introlist .intro-item dd {
         line-height: 40px;
         color: #999; }
+        .footer .container .footer-center .introlist .intro-item dd a {
+          color: #999; }
     .footer .container .footer-center .code {
-      margin-top: 40px; }
-      .footer .container .footer-center .code img {
-        width: 100px;
-        height: 100px; }
+      width: 150px;
+      height: 150px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: block;
+      background-image: url("../images/logo.png"); }
   .footer .container .banquan {
     color: #999;
-    font-size: 12px; }
+    font-size: 14px; }
+    .footer .container .banquan p {
+      line-height: 30px;
+      text-align: center; }
 
 @media screen and (max-width: 1200px) {
   .container {
@@ -1176,7 +1185,8 @@ a:hover {
       .content .annualMeeting p span {
         font-size: 24px; }
   .content .solution .tabs .tab-item {
-    width: 600px;
+    /* width:600px;*/
+    width: 50%;
     height: 65px;
     line-height: 65px;
     text-align: center;
@@ -1341,6 +1351,7 @@ a:hover {
         .content .dapeitaocan .taocan .taocan-foot .taocan-foot-item:last-child {
           margin: -6px 0 0 6px; }
         .content .dapeitaocan .taocan .taocan-foot .go-buy {
+          display: none;
           margin-top: 20px;
           width: 160px;
           height: 40px;

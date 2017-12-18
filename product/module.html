@@ -78,7 +78,7 @@
 </div>
 
 <div class="content">
-    <div class="sousuocart backlan ">
+    <div class="sousuocart backlan hide">
         <div class="container ">
             <span class="fl">清空条件</span>
             <input class="fl"  type="text">
@@ -105,12 +105,12 @@
            <div class="same lei-func clear">
                <span class="fl">功能分类&nbsp;&nbsp;></span>
                <ul class="fl">
-                   <li class="on">全部</li>
-                   <li>3D功能</li>
-                   <li>签到类</li>
-                   <li>互动类</li>
-                   <li>抽奖类</li>
-                   <li>增值服务类</li>
+                   <li class="on" >全部</li>
+                   <li data-role="function">3D功能</li>
+                   <li data-role="qiandao">签到类</li>
+                   <li data-role="hudong">互动类</li>
+                   <li data-role="choujiang">抽奖类</li>
+                   <li data-role="service">增值服务类</li>
                </ul>
            </div>
            <div class="same lei-price clear">
@@ -126,10 +126,10 @@
        </div>
     </div>
 
-    <div class="func">
+    <div  class="func">
         <div class="container tx-c">
             <div class="func-list">
-                <div class="func-item">
+                <div id="function" class="func-item">
                     <h3>3D功能</h3>
                     <ul class="clear">
                         <li>
@@ -386,7 +386,7 @@
 
                     </ul>
                 </div>
-                <div class="func-item">
+                <div id="qiandao" class="func-item">
                     <h3>签到类</h3>
                     <ul class="clear">
                         <li>
@@ -523,7 +523,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="func-item">
+                <div id="hudong" class="func-item">
                     <h3>互动类</h3>
                     <ul class="clear">
                         <li>
@@ -872,7 +872,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="func-item">
+                <div id="choujiang" class="func-item">
                     <h3>抽奖类</h3>
                     <ul class="clear">
                         <li>
@@ -996,7 +996,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="func-item">
+                <div id="service" class="func-item">
                     <h3>增值服务类</h3>
                     <ul class="clear">
                         <li>

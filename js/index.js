@@ -36,6 +36,11 @@ $(function() {
     },600);
     $(".site li").hover(function(){
         var $index=$(this).index();
+        if($index==3){
+            $(".bigTab .box").height("570px")
+        }else{
+            $(".bigTab .box").height("380px")
+        }
         //if(!$(this).is(":animated")) {
             $(this).addClass("on").find(".bigbox").stop(true).animate({
                 "marginTop": "-45px"

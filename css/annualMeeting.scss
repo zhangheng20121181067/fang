@@ -46,7 +46,8 @@
   .solution{
     .tabs{
       .tab-item{
-        width:600px;
+       /* width:600px;*/
+        width:50%;
         height:65px;
         line-height: 65px;
         text-align: center;
@@ -272,6 +273,7 @@
           margin:-6px 0 0 6px;
         }
         .go-buy{
+          display: none;
           margin-top:20px;
           width:160px;
           height:40px;

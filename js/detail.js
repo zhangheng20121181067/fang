@@ -32,7 +32,7 @@ $(function() {
         $(".bigimglist").find("img").eq($smallimgIndex).removeClass("hide").siblings().addClass("hide");*/
         $(this).addClass("on").siblings().removeClass("on");
         var imgsrc=$(this).find("img").attr("src");
-        console.log(imgsrc);
+
         $(".bigimglist").find("img").attr("src",imgsrc);
     });
 

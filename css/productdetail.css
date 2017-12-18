@@ -1043,7 +1043,7 @@ a:hover {
   .header .logo {
     width: 190px;
     height: 80px;
-    background-size: initial;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     display: block;
@@ -1098,7 +1098,8 @@ a:hover {
   .footer .container h2 {
     line-height: 80px; }
   .footer .container .shiyong {
-    display: inline-block; }
+    /*  display:inline-block;*/
+    display: none; }
     .footer .container .shiyong input {
       width: 400px;
       height: 40px;
@@ -1121,7 +1122,7 @@ a:hover {
   .footer .container .footer-center {
     margin: 30px 0; }
     .footer .container .footer-center .introlist .intro-item {
-      margin-right: 70px;
+      margin-right: 50px;
       text-align: left; }
       .footer .container .footer-center .introlist .intro-item:last-child {
         margin-right: 0; }
@@ -1131,14 +1132,22 @@ a:hover {
       .footer .container .footer-center .introlist .intro-item dd {
         line-height: 40px;
         color: #999; }
+        .footer .container .footer-center .introlist .intro-item dd a {
+          color: #999; }
     .footer .container .footer-center .code {
-      margin-top: 40px; }
-      .footer .container .footer-center .code img {
-        width: 100px;
-        height: 100px; }
+      width: 150px;
+      height: 150px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: block;
+      background-image: url("../images/logo.png"); }
   .footer .container .banquan {
     color: #999;
-    font-size: 12px; }
+    font-size: 14px; }
+    .footer .container .banquan p {
+      line-height: 30px;
+      text-align: center; }
 
 @media screen and (max-width: 1200px) {
   .container {
@@ -1159,7 +1168,8 @@ a:hover {
       border-radius: 6px;
       margin: 15px 0 0 30px; }
   .content .setionone .setionone-center {
-    margin-left: 20px;
+    max-width: 570px;
+    margin: 0 20px;
     color: #666; }
     .content .setionone .setionone-center h2 {
       font-size: 32px;
@@ -1191,7 +1201,8 @@ a:hover {
       .content .setionone .setionone-center .price .huaxian {
         text-decoration: line-through; }
     .content .setionone .setionone-center .zhifuway {
-      margin-top: 30px; }
+      margin-top: 30px;
+      display: none; }
       .content .setionone .setionone-center .zhifuway span {
         float: left; }
       .content .setionone .setionone-center .zhifuway .zhifuway-item {
@@ -1207,7 +1218,8 @@ a:hover {
           display: block;
           height: 30px; }
     .content .setionone .setionone-center .shoptiyan {
-      margin: 100px 0 16px; }
+      margin: 100px 0 16px;
+      display: none; }
       .content .setionone .setionone-center .shoptiyan .shop {
         width: 160px;
         height: 40px;
@@ -1222,8 +1234,8 @@ a:hover {
         border: 1px solid #ff538f;
         border-radius: 16px; }
   .content .setionone .setionone-right {
-    width: 216px;
-    height: 290px;
+    width: 240px;
+    height: 260px;
     border: 1px solid #ccc; }
     .content .setionone .setionone-right h3 {
       line-height: 48px; }
@@ -1233,7 +1245,8 @@ a:hover {
         font-size: 30px;
         font-weight: 600; }
     .content .setionone .setionone-right .share {
-      display: inline-block;
+      /* display: inline-block;*/
+      display: none;
       width: 70px;
       padding: 10px;
       border-radius: 10px; }
